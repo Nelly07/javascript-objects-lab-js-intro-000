@@ -3,6 +3,6 @@ var recipe={
   flour: "1 cup",
   milk: "200ml"
 }
-function updateObjectWithKeyAndValue(recipe,salt,'1 tbspoon'){
+function updateObjectWithKeyAndValue(recipe,salt,onetbspoon){
   return Object.assign({},recipe,{[salt]:'1 tbspoon'});
 }
