@@ -4,5 +4,5 @@ var recipe={
   milk: "200ml"
 }
 function updateObjectWithKeyAndValue(recipe,salt,'1 tbspoon'){
-  return Object.assign({},recipe,{[salt]:1 tbspoon});
+  return Object.assign({},recipe,{[salt]:'1 tbspoon'});
 }
