@@ -4,7 +4,8 @@ var recipes={
   milk: "200ml"
 };
 function updateObjectWithKeyAndValue(recipes,salt,onetbspoon){
-  return Object.assign(recipes,{salt:"onetbspoon"});
+  var newrec=Object.assign(recipes,{salt:"onetbspoon"});
+  return recipes;
 }
 function destructivelyUpdateObjectWithKeyAndValue(recipes,salt,onetbspoon){
   recipes[salt]=onetbspoon;
