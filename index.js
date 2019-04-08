@@ -11,3 +11,6 @@ function destructivelyUpdateObjectWithKeyAndValue(recipe,salt,onetbspoon){
   recipe[salt]=onetbspoon;
   return recipe;
 }
+function deleteFromObjectByKey(recipe,milk){
+  return delete recipe.milk;
+}
