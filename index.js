@@ -1,20 +1,20 @@
-var recipe={
+var recipes={
   eggs: "3",
   flour: "1 cup",
   milk: "200ml"
 };
-function updateObjectWithKeyAndValue(recipe,salt,onetbspoon){
-  var newrecipe=Object.assign({},recipe);
-  return newrecipe;
+function updateObjectWithKeyAndValue(recipes,salt,onetbspoon){
+  var newrecipes=Object.assign({},recipes);
+  return newrecipes;
 }
-function destructivelyUpdateObjectWithKeyAndValue(recipe,salt,onetbspoon){
-  recipe[salt]=onetbspoon;
-  return recipe;
+function destructivelyUpdateObjectWithKeyAndValue(recipes,salt,onetbspoon){
+  recipes[salt]=onetbspoon;
+  return recipes;
 }
-function deleteFromObjectByKey(recipe,milk){
-  return delete recipe.milk;
+function deleteFromObjectByKey(recipes,milk){
+  return delete recipes.milk;
 }
-function destructivelyDeleteFromObjectByKey(recipe,milk){
-  delete recipe[milk];
-  return recipe;
+function destructivelyDeleteFromObjectByKey(recipes,milk){
+  delete recipes[milk];
+  return recipes;
 }
